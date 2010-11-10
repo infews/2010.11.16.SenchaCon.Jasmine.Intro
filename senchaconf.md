@@ -26,24 +26,44 @@
 
 # <em>UT</em>&nbsp;YJSATFT
 
-!SLIDE middle
+!SLIDE
 
-_Practising whilst testing with @JasmineBDD has improved my knowledge of JavaScript over the last few days._
+<blockquote class="twitter-bubble" cite="http://twitter.com/#!/tom_b025/status/29591504502">
+  <p>
+	Practising whilst testing with <a href="http://twitter.com/jasminebdd">@JasmineBDD</a> has improved my knowledge of JavaScript over the last few days.
+  </p>
+</blockquote>
+<p>
+  <a href="http://twitter.com/tom_b025">@tom_b025</a>
+  on
+  <a href="http://twitter.com/#!/tom_b025/status/29591504502">03 Nov 2010</a>
+</p>
 
-### [@tom_b025](http://twitter.com/#!/tom_b025/status/29591504502)
+!SLIDE
 
-!SLIDE middle
+<blockquote class="twitter-bubble" cite="http://twitter.com/#!/coreyhaines/status/28007443308">
+  <p>
+    Using <a href="http://twitter.com/jasminebdd">@JasmineBDD</a> for testing JavaScript significantly speeds up the process/runtime. <a href="#">#rar10</a>
+  </p>
+</blockquote>
+<p>
+  <a href="http://twitter.com/coreyhaines">@coreyhaines</a>
+  on
+  <a href="http://twitter.com/#!/coreyhaines/status/28007443308">21 Oct 2010</a>
+</p>
 
-_I've never bothered to test my JavaScript before now. It feels fantastic and @jasminebdd flows like water. Very nice stuff._
+!SLIDE
 
-### [@NathanStults](http://twitter.com/#!/nathanstults/status/29600748032)
-
-!SLIDE middle
-
-_Using @jasminebdd for testing JavaScript significantly speeds up the process/runtime. #rar10_
-
-### [@coreyhaines](http://twitter.com/#!/coreyhaines/status/28007443308)
-
+<blockquote class="twitter-bubble" cite="http://twitter.com/#!/nathanstults/status/29600748032">
+  <p>
+    I've never bothered to test my JavaScript before now. It feels fantastic and <a href="http://twitter.com/jasminebdd">@JasmineBDD</a> flows like water. Very nice stuff.
+ </p>
+</blockquote>
+<p>
+  <a href="http://twitter.com/NathanStults">@NathanStults</a>
+  on
+  <a href="http://twitter.com/#!/nathanstults/status/29600748032">03 Nov 2010</a>
+</p>
 
 !SLIDE
 
@@ -61,17 +81,17 @@ describe("Math", function() {
        
 ![Example test run](./images/simple-example-pass.jpg) 
 
+!SLIDE
+
+# As a site administrator
+<p></p> 
+# I want to obfuscate offensive language
+<p></p>
+# So that I don't risk offending my users
+
 !SLIDE middle
 
 # Expectations
-
-!SLIDE
-
-<pre>
-	As a site administrator
-    I want to obfuscate offensive language
-    So that I don't risk offending my users
-</pre>
 
 !SLIDE
 
@@ -205,13 +225,13 @@ TwitterApi.prototype = {
 
 @@@ js
 mockResponse = {
-  as_of: "2010-05-18 19:21",
+  as_of: "2010-11-07 19:21",
   trends: [
-    {name: "Woodford Reserve", url: "http://fake.url/woodford-reserve"},
-    {name: "Clojure", url: "http://fake.url/clojure"},
-    {name: "iPad", url: "http://fake.url/ipad"},
-    {name: "San Bruno Fire", url: "http://fake.url/san-bruno-fire"},
-    {name: "Haruki Murakami", url: "http://fake.url/haruki-murakami"}                
+    {name: "NYC Marathon", url: "http://fake.url/nyc-marathon"},
+    {name: "Laphroaig", url: "http://fake.url/laphroaig"},
+    {name: "Verizon iPad", url: "http://fake.url/vzw-ipad"},
+    {name: "A380 Emergency", url: "http://fake.url/a380-emergency"},
+    {name: "SF Giants", url: "http://fake.url/sfgiants-world-series"}                
   ]
 };
 @@@
@@ -414,8 +434,9 @@ $ rake jasmine
 $ rake jasmine:ci
 @@@
 
-  * Uses Selenium to drive the browser and rspec to report expectations
-  * Works out of the box with CruiseControl.rb, Hudson, Team City, etc.
+* Runs your specs in a browser (Selenium)
+* Reports via command line (RSpec)
+* Works with your CI server (CCRB, Hudson, Team City)
 
 !SLIDE middle
 
@@ -468,7 +489,7 @@ $ rake jasmine:ci
 
 <p></p>
 
-## expect(jasmine).toBeDefined();
+<div class="code"> expect(<span class="jasmine">jasmine</span>).toBeDefined();</div>
 
 <p></p>
 

@@ -1,1 +1,163 @@
 /* Custom CSS for your KeyDown presentation here */
+
+/* Overrides to match SenchaCon's styling
+*/
+
+@font-face {
+	font-family: 'Klavika';
+  font-weight: normal;
+  font-style: normal;
+	src: url(../fonts/Klavika-Regular.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Klavika';
+  font-weight: normal;
+  font-style: italic;
+	src: url(../fonts/Klavika-RegularItalic.otf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Klavika';
+  font-weight: bold;
+  font-style: normal;
+	src: url(../fonts/Klavika-Bold.otf);
+}
+
+@font-face {
+	font-family: 'Klavika';
+  font-weight: bold;
+  font-style: italic;
+	src: url(../fonts/Klavika-BoldItalic.otf);
+}
+
+body {
+  font: 20px 'Klavika', Helvetica, Arial, sans-serif;
+}
+
+.presentation {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#777), to(#3f3f3f));
+  background: -moz-linear-gradient(bottom, #3f3f3f, #777);
+  background: linear-gradient(bottom, #3f3f3f, #777);
+}
+
+.slide {
+  -webkit-border-radius: 4px;
+  -moz-border-radius:    4px;
+  border-radius:         4px;
+  /*background: url(../images/logo_small.png) 50% 97% no-repeat, url(../images/slide_white.png) 0 0 no-repeat;*/
+  background-color: #f9f9f9;
+  font-family: 'Klavika', Helvetica, Arial, sans-serif;
+}
+
+.slide:nth-child(even),
+.slide:nth-child(odd) {
+  -moz-border-radius: none;
+  -khtml-border-radius: none;
+  border-radius: none;
+  -webkit-border-top-left-radius: none;
+  -webkit-border-bottom-right-radius: none;
+}
+
+header {
+ font-family: 'Klavika', 'Helvetica Neue';
+}
+
+section, footer {
+  font-family: 'Klavika', 'Helvetica Neue';	
+	text-shadow: rgba(255,255,255, 0.3) 0 1px 2px;
+}
+
+pre, pre select, .code {
+  font-family: Menlo, Monaco, Courier, monospace;
+}
+
+pre {
+  background: ghostWhite;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius:  4px;
+  -moz-border-radius:    4px;
+  border-radius:         4px;
+  border: 1px solid #ddd;
+}
+
+.code .jasmine {
+	color: darkgreen;
+}
+
+input, button {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+div.example, video {
+  -webkit-border-radius: 4px;
+  -khtml-border-radius:  4px;
+  -moz-border-radius:    4px;
+  border-radius:         4px;
+}
+
+.key {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*== TWITTER
+** ============================================================================================================================ */
+
+.twitter-bubble {
+    position:relative;
+    padding:15px;
+    margin:100px 0 0.5em;
+    color:#333;
+    background:#eee;
+
+    /* css3 */
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+.twitter-bubble p {
+  font-size:28px;
+  line-height:1.25em;
+}
+
+/* this isn't necessary, just saves me having to edit the HTML of the demo */
+.twitter-bubble:before {
+    content:url(../images/twitter-logo.gif);
+    display:block; /* reduce the damage in FF3.0 */
+    position:absolute;
+    top:-60px;
+    left:0;
+    width:155px;
+    height:36px;
+}
+
+/* creates the triangle */
+.twitter-bubble:after {
+    content:"";
+    display:block; /* reduce the damage in FF3.0 */
+    position:absolute;
+    bottom:-30px;
+    left:50px;
+    width:0;
+    height:0;
+    border:15px solid transparent;
+    border-top-color:#eee;
+}
+
+/* display of quote author (alternatively use a class on the element following the blockquote) */
+.twitter-bubble + p {
+	padding-top: 10px;
+  padding-left:15px;
+  font:24px Klavika, Helvetica, Arial, sans-serif;
+}
+
+.twitter-bubble a {
+	text-decoration: none;
+	color: #11aadd;
+	border-bottom: none;
+}
+
