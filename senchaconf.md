@@ -315,7 +315,7 @@ jQuery.getJSON.argsForCall[1]; // Arguments for a specific call to the spy
 
 !SLIDE middle
 
-#DOM Fixtures and jQuery
+# DOM Fixtures and jQuery
 
 !SLIDE
 
@@ -444,15 +444,31 @@ $ rake jasmine:ci
 
 !SLIDE middle
 
-# Read Michael Feathers's [_The Humble Dialog Box_](http://www.objectmentor.com/resources/articles/TheHumbleDialogBox.pdf)
+# Live & Breathe [_The Humble Dialog Box_](http://www.objectmentor.com/resources/articles/TheHumbleDialogBox.pdf)
+
+## by Michael Feathers
 
 !SLIDE middle
 
-# Test-drive code that implements your business logic
+# Let Sencha test Sencha
 
 !SLIDE middle
 
-# Let Sencha test the framework
+# BTW
+## Ext 4's 4000 unit tests use Jasmine
+
+!SLIDE
+
+<blockquote class="twitter-bubble" cite="http://twitter.com/#!/edspencer/status/4303084347981824">
+  <p>
+    <a href="http://twitter.com/dwfrank">@dwfrank</a> absolutely. We love Jasmine. You can quote me on that.
+  </p>
+</blockquote>
+<p>
+  <a href="http://twitter.com/edspencer"><img src="images/edspencer.png"/>@edspencer</a>
+  on
+  <a href="http://twitter.com/#!/edspencer/status/4303084347981824">15 Nov 2010</a>
+</p>
 
 !SLIDE middle
 
