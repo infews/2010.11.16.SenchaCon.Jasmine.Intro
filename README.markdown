@@ -10,6 +10,6 @@ Other notes:
 
 * The [original description of the session](http://www.sencha.com/conference/sessions/session.php?sid=301)
 * [Video of the session](http://vimeo.com/18100173)
-* [Jasmine's home page](http://pivotal.github.com/jasmine) on Github - links to support, docs, etc.
+* [Jasmine's home page](https://jasmine.github.io/) on Github - links to support, docs, etc.
 
 Anything else, drop me an [email](mailto:dwfrank@pivotallabs.com)
